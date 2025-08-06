@@ -12,7 +12,11 @@ int main() {
 	float ThuNhapChiuThue4 = a - 80;
 
     if (a <= 11) {
-        printf("Ban khong phai tra thue");
+    	if(a >= 0){
+    		printf("Ban khong phai tra thue");
+		}else{
+			printf("Ban dang nhap so am");
+		};
     }else if(a <= 18){
 		printf("so tien thue ban phai nop la :%.3f",ThuNhapChiuThue*0.15);
     }else if(a <= 32){
